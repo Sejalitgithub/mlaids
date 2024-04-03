@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>AgriAdvisor</title>
+    <link rel="stylesheet" href="{{url_for('static',filename='style/myhome.css')}}">
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <h1>AGRIADVISOR</h1>
+      <h3 style="color: black;">
+      We recommends you to which crop you should grow in your farm for better yields,on the basis of
+         the levels of nitrogen, phosphorus, and potassium in soil, as well as temperature, humidity, pH, and rainfall .
+      </h3>
+      <br>
+      <h3 style="color: black;"></h3>
+      <br>
+      <h2 style="color: black;">Click following button for Crop recommandation</h2>
+    </main>
+     <form action="/Predict">
+      <input type="submit" id="Predict" name="Predict" action="/Predict" value="Predict">
+     </form>
+  </body>
+</html>
